@@ -8,6 +8,8 @@ Udacity tested an additional screening question during free-trial enrollment to 
 
 ## Dataset
 
+[Interactive Kaggle notebook](https://www.kaggle.com/code/zacksshen/udacity-ab-testing-by-google) is a reference implementation, not the author's analysis. The notebook in this repository contains the independent analysis.
+
 Source: [Udacity A/B Testing by Google — Kaggle](https://www.kaggle.com/datasets/zacksshen/udacity-ab-testing-by-google-datasets)
 
 The dataset contains 37 days of aggregated control and experiment observations, with 23 days containing complete enrollment and payment outcomes.
@@ -34,11 +36,9 @@ The 95% confidence interval for net conversion was **−1.16 to +0.19 percentage
 
 ## Visualizations
 
-![Conversion Rate Comparison](conversion_comparison.png)
 <img width="889" height="490" alt="download" src="https://github.com/user-attachments/assets/2e02b4b2-90c9-44b2-9b5c-81dc415e22f7" />
 
 
-![Treatment Effects and Confidence Intervals](treatment_effects.png)
 <img width="890" height="490" alt="download" src="https://github.com/user-attachments/assets/d2b11faf-9c6c-4a76-9cf8-fb9940cb7875" />
 
 ## Business Recommendation
@@ -55,6 +55,12 @@ Before launching, the company should validate actual trial costs, customer contr
 - Financial assumptions are illustrative, not actual Udacity costs.
 - No direct measurement of customer satisfaction or long-term educational outcomes.
 - Higher trial-to-payment conversion does not establish a causal improvement among trial participants.
+
+## Reproduce
+
+1. Open the notebook in Kaggle and attach the [Udacity A/B Testing by Google dataset](https://www.kaggle.com/datasets/zacksshen/udacity-ab-testing-by-google-datasets).
+2. Run all cells in order. Results use 23 days with complete enrollment and payment follow-up; 37 days are available for pageview/click checks.
+3. The last cells generate the conversion and confidence-interval figures.
 
 ## Tools
 
